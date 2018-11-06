@@ -137,7 +137,7 @@ hp_data &lt;- read_csv(&quot;harry_potter_aggression_full.csv&quot;)</code></pre
   select(Name, book, agg.per.mention) %&gt;% # Keep data only on Name, book, agg.per.mention
   ggplot(aes(x = book, y = agg.per.mention)) +
   geom_col(aes(fill = Name), position = &quot;dodge&quot;) + # Make color of column according to Name (Draco or Harry), make bars side-by-side instead of stacked
-  coord_flip() # Flip x and y axes
+  coord_flip() # Flip x- and y- axes
 
 
 hp_graph</code></pre>

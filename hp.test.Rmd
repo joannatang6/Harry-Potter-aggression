@@ -27,7 +27,7 @@ hp_graph <- hp_data %>%
   select(Name, book, agg.per.mention) %>% # Keep data only on Name, book, agg.per.mention
   ggplot(aes(x = book, y = agg.per.mention)) +
   geom_col(aes(fill = Name), position = "dodge") + # Make color of column according to Name (Draco or Harry), make bars side-by-side instead of stacked
-  coord_flip() # Flip x and y axes
+  coord_flip() # Flip x- and y- axes
 
 
 hp_graph
